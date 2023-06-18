@@ -30,4 +30,4 @@ class NodeApi {
   }
 }
 
-export const nodeApi = new NodeApi(REACT_APP_NETWORK);
+export const nodeApi = new NodeApi("wss://rpc-node.gear-tech.io:443");

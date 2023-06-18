@@ -39,6 +39,12 @@ const MintButton = () => {
       const { payload, value, destination } = message;
       const decodedAddress = GearKeyring.decodeAddress(address);
 
+      // console.log('decodedAddress', decodedAddress);
+      // console.log('destination', destination);
+      // console.log('payload', payload);
+      // console.log('value', value);
+
+
       return api.program.gasSpent.handle(
         decodedAddress,
         destination,
